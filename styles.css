@@ -633,7 +633,7 @@ video.hero-main-image {
   align-items: center;
   gap: 6px;
   margin: 0 0 6px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--black);
 }
@@ -651,7 +651,7 @@ video.hero-main-image {
 }
 
 .ai-summary-list li {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.55;
   color: #333;
 }
@@ -694,7 +694,7 @@ video.hero-main-image {
 
 .feature p {
   margin: 0;
-  font-size: 12px;
+  font-size: 16px;
   color: #4a5565;
   line-height: 1.4;
 }
@@ -721,7 +721,7 @@ video.hero-main-image {
   border-bottom: 1px solid var(--line);
   display: flex;
   justify-content: space-between;
-  font-size: 12px;
+  font-size: 16px;
   padding: 4px 0;
   gap: 8px;
 }
@@ -746,7 +746,7 @@ video.hero-main-image {
 .specs-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .specs-table tr {
@@ -773,7 +773,7 @@ video.hero-main-image {
 /* Compare tab */
 .compare-intro {
   margin: 0 0 14px;
-  font-size: 14px;
+  font-size: 16px;
   color: #4a5565;
   line-height: 1.5;
 }
@@ -788,7 +788,7 @@ video.hero-main-image {
   width: 100%;
   min-width: 480px;
   border-collapse: collapse;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .compare-table th,
@@ -800,7 +800,7 @@ video.hero-main-image {
 
 .compare-table th {
   font-weight: 700;
-  font-size: 13px;
+  font-size: 16px;
   position: sticky;
   top: 0;
   background: #fff;
@@ -819,7 +819,7 @@ video.hero-main-image {
 
 .compare-verdict {
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.55;
   color: #333;
   padding: 12px;
@@ -843,7 +843,7 @@ video.hero-main-image {
 
 .review-tldr p {
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.55;
   color: #333;
 }
@@ -950,7 +950,7 @@ video.hero-main-image {
 
 .review-card p {
   margin: 0 0 10px;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.5;
   color: #333;
 }
@@ -1203,20 +1203,24 @@ video.hero-main-image {
   /* Right: product pod */
   .pdp-right {
     padding: 40px 48px 48px;
+    display: flex;
+    flex-direction: column;
   }
 
-  /* Size selector */
+  /* Size selector — moved above Add to cart on desktop via order */
   .sizes {
-    padding: 0 0 24px;
+    padding: 16px 0;
     justify-content: flex-start;
+    order: 2;
   }
 
   /* Product card */
   .product-card {
+    order: 1;
     margin: 0;
     background: var(--bg-card);
     padding: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
   }
 
   .title-row h1 {
@@ -1236,8 +1240,9 @@ video.hero-main-image {
 
   /* Desktop Add to Cart */
   .desktop-add-to-cart {
+    order: 3;
     display: block;
-    padding: 24px 0;
+    padding: 16px 0 24px;
     border-bottom: 1px solid var(--line);
   }
 
@@ -1257,6 +1262,7 @@ video.hero-main-image {
 
   /* Delivery section in right panel */
   .section-delivery {
+    order: 4;
     margin-top: 0;
     border-top: none;
     padding: 24px 0 0;
